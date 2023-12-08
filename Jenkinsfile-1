@@ -6,7 +6,7 @@ pipeline {
    stages{
     stage('Run SAST Scan') {
             steps { 
-    sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=demo-sast -Dsonar.organization=conf-sast-magang -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=509447a7fbc95380b7fc64bf38804e994a510484'
+    sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=conf-sast-magang_demo-sast -Dsonar.organization=conf-sast-magang -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=509447a7fbc95380b7fc64bf38804e994a510484'
       }
     }
   }
